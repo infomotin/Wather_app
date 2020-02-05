@@ -2,6 +2,13 @@
 
 {% block content %}
     <h1> My Sweet Home </h1>
+    {% for apis in api %}
+        <h1> Reporting Area : {{ apis.ReportingArea }} <br> </h1>
+        Air Qut : {{ apis.AQI }} <br>
+        City Category : {{ apis.Category.Name }} <br>
+
+    {% endfor %}
+
 {% endblock %}
 
 
